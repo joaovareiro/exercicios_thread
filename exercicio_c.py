@@ -1,8 +1,8 @@
 from threading import Semaphore
 from threading import Barrier
+from threading import Thread
 import random
 import numpy as np
-import threading
 
 def criaBarreira(n):
     return Barrier(n)
@@ -57,7 +57,7 @@ def f(i,j):
 
 for i in range(n):
     for j in range(n):
-        threading.Thread(target=f, args=(i,j,)).start()
+        Thread(target=f, args=(i,j,)).start()
 
 
 

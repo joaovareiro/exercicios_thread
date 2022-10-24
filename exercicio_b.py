@@ -1,10 +1,11 @@
 from threading import Barrier
+from threading import Thread
 import random
 import numpy as np
-import threading
+
 
 def criaBarreira(n):
-    return threading.Barrier(n)
+    return Barrier(n)
 
 def esperaBarreira(barreira):
     barreira.wait()
@@ -35,7 +36,7 @@ for i in range(n):
     m.append(linha)
 
 for linha in range(n):
-    threading.Thread(target=f, args=(linha,)).start()
+    Thread(target=f, args=(linha,)).start()
 
 esperaBarreira(bar2)
 
