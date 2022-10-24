@@ -18,7 +18,7 @@ for j in range(n):
         if(j == 0):
             m[i][j] = random.randint(0,n)
         else:
-            m[i][j] = m[random.randint(0,n)%n][random.randint(0,n)%j]
+            m[i][j] = m[random.randint(0,n-1)][random.randint(0,j-1)]
 
 #transformando a matriz no formato do numpy para facilitar a impressão da ultima coluna
 mfinal = np.array(m)
