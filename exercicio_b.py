@@ -10,10 +10,7 @@ def esperaBarreira(barreira):
     barreira.wait()
 
 def printMatriz(matriz):
-    mfinal = np.array(matriz)
-    ultimaColuna = mfinal[:,-1]
-    for i in ultimaColuna:
-        print(i)
+    print(np.array(matriz))
 
 
 n = int(input("Insira o numero de linhas/colunas: "))
@@ -27,7 +24,7 @@ def f(linha):
         if(j == 0):
             m[linha][0] = random.randint(0,n)
         else:
-            m[linha][j] = m[random.randint(0,n-1)][random.randint(0,j-1)]
+            m[i][j] = m[random.randint(0,n)%n][random.randint(0,n)%j]
         bar1.wait()
     bar2.wait()
 
