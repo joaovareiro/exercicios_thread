@@ -1,7 +1,7 @@
 import random
 import numpy as np
-
-n = int(input("Insira o numero de linhas/colunas:"))
+import sys
+n = int(sys.argv[1])
 m = []
 
 for i in range(n):
@@ -18,4 +18,4 @@ for j in range(n):
         else:
             m[i][j] = m[random.randint(0,n)%n][random.randint(0,n)%j]
 
-print(np.array(m))
+# print(np.array(m))

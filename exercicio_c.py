@@ -21,7 +21,9 @@ def up(semaforo):
     semaforo.release()
 
 
-n = int(input("Insira o numero de linhas/colunas: "))
+import sys
+n = int(sys.argv[1])
+
 m = []
 threads = []
 sem = []
@@ -63,6 +65,6 @@ for i in range(n):
 
 esperaBarreira(fim)
 
-printMatriz(m)
+# printMatriz(m)
 
 

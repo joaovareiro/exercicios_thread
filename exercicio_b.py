@@ -13,8 +13,9 @@ def esperaBarreira(barreira):
 def printMatriz(matriz):
     print(np.array(matriz))
 
+import sys
+n = int(sys.argv[1])
 
-n = int(input("Insira o numero de linhas/colunas: "))
 m = []
 threads = []
 bar1 = criaBarreira(n)
@@ -40,6 +41,6 @@ for linha in range(n):
 
 esperaBarreira(bar2)
 
-printMatriz(m)
+# printMatriz(m)
 
 
