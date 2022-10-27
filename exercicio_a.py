@@ -18,4 +18,4 @@ for j in range(n):
         else:
             m[i][j] = m[random.randint(0,n)%n][random.randint(0,n)%j]
 
-# print(np.array(m))
+print(np.array(m))

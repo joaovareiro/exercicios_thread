@@ -41,6 +41,6 @@ for linha in range(n):
 
 esperaBarreira(bar2)
 
-# printMatriz(m)
+printMatriz(m)
 
 

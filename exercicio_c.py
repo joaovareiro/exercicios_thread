@@ -65,6 +65,6 @@ for i in range(n):
 
 esperaBarreira(fim)
 
-# printMatriz(m)
+printMatriz(m)
 
 
